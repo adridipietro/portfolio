@@ -1,20 +1,8 @@
 import congruent from '../images/congruent.png'
-import silvermark from '../images/silvermark.png'
 import adrui from '../images/adr-ui.png'
 
+const project_intro = 'I am a software engineer who looks to turn complex problems into elegant solutions. Experienced in Ruby on Rails, JavaScript and React with a background in English literature and writing. I found web development when I realized challenging myself is the best way to approach life.'
 const projects = [
-    {
-        name: 'SILVERMARK',
-        image: silvermark,
-        description: 'SILVERMARK is a minimalist bookmark manager application that allows users to create, view, and delete bookmarks. SILVERMARK utilizes a Ruby on Rails backend and a JavaScript frontend. SILVERMARK utilizes a React framework and Redux middleware.',
-        github: 'https://github.com/am20dipi/silvermark'
-    },
-    {
-        name: 'UPFRONT',
-        //image: upfront,
-        description: 'UPFRONT is a single page application that allows users to create, view, edit and delete items (or tasks) in a to-do list format. UPFRONT utilizes a Ruby on Rails backend and a JavaScript frontend.',
-        github: 'https://github.com/am20dipi/upfront-task-2'
-    },
     {
         name: 'dillonperino.com',
         image: congruent,
@@ -32,30 +20,28 @@ const projects = [
 function Projects() {
     return (
         <div className="container">
-
             <div className="p">
                 <div className="p-wrapper">
-                    <h4 className="p-text" style={{fontSize: '50px', fontFamily: 'Nighty', fontWeight: '200', color: 'white', webkitTextStroke: 'black 1.2px'}}>FRONTEND FOCUSED SOFTWARE ENGINEER</h4>
-                    <p className="p-text" style={{fontSize: '28px'}}>WITH FULL STACK EXPERIENCE</p>
+                    <h4 className="p-text" style={{fontSize: '50px', fontFamily: 'Nighty'}}>BACKEND SOFTWARE ENGINEER</h4>
+                    <h3 className="p-text" style={{fontSize: '28px'}}>WITH FULLSTACK EXPERIENCE</h3>
                     <br/>
-                    <p className="p-desc" style={{fontWeight: '100'}}>Some technical projects from my bootcamp experience + a freelance project.  <span style={{fontWeight: '600'}}>Click to learn more.</span></p> 
+                    <p className="p-desc" style={{fontWeight: '100'}}>{project_intro}</p> 
                     <br/>
                     <div className="card-columns" id="project">
                         {projects.map((project, index) => {
                             return (
                             <div className="card" id="project" key={index} onClick={() => window.open(project.github)}>
-                            {/*  <img className="card-img" src={project.image} alt={project.name} style={{width: '40%'}} /> */}
+                             {/* <img className="card-img" src={project.image} alt={project.name} style={{width: '40%'}} /> */}
                                 <div className="card-body">
                                     <h5 className="card-title">{project.name}</h5>
                                     <p className="card-text text-muted">{project.description}</p>
                                 </div>
                                 <div className="card-footer">
-                                        <a href={project.github} target="_blank" rel="noopener noreferrer" className="card-link" ><i className="fa fa-github"></i></a>
+                                    <a href={project.github} target="_blank" rel="noopener noreferrer" className="card-link" ><i className="fa fa-github"></i></a>
                                 </div>
                             </div>
                             )
                         })}
-                        
                     </div>
                 </div>
             </div>

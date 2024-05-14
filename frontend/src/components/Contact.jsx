@@ -10,12 +10,8 @@ const SERVICE_ID = "service_ed8neos"
 const TEMPLATE_ID = 'template_5uffohf'
 const USER_ID = "yX0TIcG5EBQ687WpH"
 
-
-
 function Contact(){
-
     const form = useRef()
-
     const handleSubmit = (e) => {
         e.preventDefault()
 
@@ -32,11 +28,8 @@ function Contact(){
             
         }
 
-   
-
     const successNotify = () => {
         toast.success('Message sent!', { position: toast.POSITION.TOP_RIGHT})
-        
     }
 
     return (
@@ -44,7 +37,7 @@ function Contact(){
             <div className="c-bg">
                 <div className="c-wrapper">
                     <div className="c-left">
-                        <h1 className="c-title">.CONTACT. ME.</h1>
+                        <h1 className="c-title">.CONTACT. .ME.</h1>
                         <div className="c-info" id="contact">
                             <div className="c-info-item" id="contact">
                                 <a href="https://www.linkedin.com/in/adriana-dipietro/" className="c-icon" target="_blank" rel="noopener noreferrer"><i className="fa fa-linkedin"></i></a>
@@ -53,7 +46,7 @@ function Contact(){
                                 <a href="https://mail.google.com/mail/?view=cm&fs=1&to=adrianadipietro4@gmail.com&su=Hi+Adriana" className="c-icon" target="_blank" rel="noopener noreferrer"><i class="fa-regular fa-envelope"></i></a>
                             </div>
                             <div className="c-info-item" id="contact">
-                                <a href="https://github.com/am20dipi" target="_blank" className="c-icon" rel="noopener noreferrer"><i className="fa fa-github"></i></a>
+                                <a href="https://github.com/adridipietro" target="_blank" className="c-icon" rel="noopener noreferrer"><i className="fa fa-github"></i></a>
                             </div>
                         </div>
                     </div>

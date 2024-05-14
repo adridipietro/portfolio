@@ -1,26 +1,21 @@
 import React from 'react'
-import blacknwhiteselfie1 from '../images/blacknwhiteselfie1.jpg'
-
-
+import selfie from '../images/IMG_9857.jpg'
 
 const skillset = [
     {
-        name: 'JavaScript'
+        name: 'RUBY ON RAILS'
     },
     {
-        name: 'React'
+        name: 'JAVASCRIPT | REACT'
     },
     {
-        name: 'HTML | CSS'
+        name: 'KAFKA | gRPC | GRAPHQL'
     },
     {
-        name: 'Bootstrap'
+        name: 'HTML | CSS | BOOTSTRAP | MATERIAL-UI'
     },
     {
-        name: 'Ruby'
-    },
-    {
-        name: 'Ruby on Rails'
+        name: 'CI/CD'
     },
 ]
 
@@ -29,16 +24,14 @@ function Introduction(){
         <div className="i">
             <div className="i-left">
                 <div className="i-left-wrapper">
-                    {/* <h3 style={{ fontSize: '30px'}}>Hello, my name is</h3> */}
                     <h2 className="i-name">.ADRIANA. .DIPIETRO.</h2>
                     <div className="i-title">
                         <div className="i-title-wrapper">
-                            <div className="i-title-item">Web Developer</div>
-                            <div className="i-title-item">Technical Writer</div>
-                            <div className="i-title-item">Freelancer</div>
+                            <div className="i-title-item">WEB DEVELOPER</div>
+                            <div className="i-title-item">TECHNICAL WRITER</div>
+                            <div className="i-title-item">FREELANCER</div>
                         </div>
                     </div>
-                    <br/>
                     <div className="i-skillset" style={{paddingTop:'60px'}} >
                         {skillset.map((skill, index) => {
                             return (
@@ -60,14 +53,14 @@ function Introduction(){
                         </div>
                         {/* github */}
                         <div className="c-info-item" id="introduction">
-                            <a href="https://github.com/am20dipi" target="_blank" className="c-icon" id="introduction" rel="noopener noreferrer"><i className="fa fa-github"></i></a>
+                            <a href="https://github.com/adridipietro" target="_blank" className="c-icon" id="introduction" rel="noopener noreferrer"><i className="fa fa-github"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
             <div className="i-right">
                 <div className="i-right-wrapper">
-                   <img className="i-img" src={blacknwhiteselfie1} alt="" /> 
+                   <img className="i-img" src={selfie} alt="" /> 
                 </div>
                 
             </div>
